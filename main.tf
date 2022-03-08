@@ -73,13 +73,13 @@ resource "aws_security_group" "sg_ec2" {
     cidr_blocks = ["10.0.0.0/16"]
   }
 
-  ingress {
-    description = "Allow inbound SSH traffic"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["203.189.65.120/29"]
-  }
+  # ingress {
+  #   description = "Allow inbound SSH traffic"
+  #   from_port   = 22
+  #   to_port     = 22
+  #   protocol    = "tcp"
+  #   cidr_blocks = ["203.189.65.120/29"]
+  # }
 
   egress {
     description = "Allow outbound traffic"
